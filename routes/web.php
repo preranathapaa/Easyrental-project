@@ -20,5 +20,5 @@ use App\Http\Controllers\Faqcontroller;
 
 Route::get('/',[Welcomecontroller::class,'welcome']);
 Route::get('/about',[Aboutuscontroller::class,'about']);
-Route::get('/booking',[Bookingcontroller::class,'booking']);
+Route::get('/booking',[Bookingcontroller::class,'booking'])->name('booking');
 Route::get('/faq',[Faqcontroller::class,'faq']);
